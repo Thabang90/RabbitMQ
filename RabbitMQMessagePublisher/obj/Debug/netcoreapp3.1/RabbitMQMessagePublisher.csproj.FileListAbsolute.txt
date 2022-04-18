@@ -1,0 +1,17 @@
+C:\Users\tsepeng\Desktop\MessageQueuingAssessment\RabbitMQMessagePublisher\obj\Debug\netcoreapp3.1\RabbitMQMessagePublisher.csprojAssemblyReference.cache
+C:\Users\tsepeng\Desktop\MessageQueuingAssessment\RabbitMQMessagePublisher\obj\Debug\netcoreapp3.1\RabbitMQMessagePublisher.AssemblyInfoInputs.cache
+C:\Users\tsepeng\Desktop\MessageQueuingAssessment\RabbitMQMessagePublisher\obj\Debug\netcoreapp3.1\RabbitMQMessagePublisher.AssemblyInfo.cs
+C:\Users\tsepeng\Desktop\MessageQueuingAssessment\RabbitMQMessagePublisher\obj\Debug\netcoreapp3.1\RabbitMQMessagePublisher.csproj.CoreCompileInputs.cache
+C:\Users\tsepeng\Desktop\MessageQueuingAssessment\RabbitMQMessagePublisher\bin\Debug\netcoreapp3.1\RabbitMQMessagePublisher.exe
+C:\Users\tsepeng\Desktop\MessageQueuingAssessment\RabbitMQMessagePublisher\bin\Debug\netcoreapp3.1\RabbitMQMessagePublisher.deps.json
+C:\Users\tsepeng\Desktop\MessageQueuingAssessment\RabbitMQMessagePublisher\bin\Debug\netcoreapp3.1\RabbitMQMessagePublisher.runtimeconfig.json
+C:\Users\tsepeng\Desktop\MessageQueuingAssessment\RabbitMQMessagePublisher\bin\Debug\netcoreapp3.1\RabbitMQMessagePublisher.runtimeconfig.dev.json
+C:\Users\tsepeng\Desktop\MessageQueuingAssessment\RabbitMQMessagePublisher\bin\Debug\netcoreapp3.1\RabbitMQMessagePublisher.dll
+C:\Users\tsepeng\Desktop\MessageQueuingAssessment\RabbitMQMessagePublisher\bin\Debug\netcoreapp3.1\RabbitMQMessagePublisher.pdb
+C:\Users\tsepeng\Desktop\MessageQueuingAssessment\RabbitMQMessagePublisher\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\tsepeng\Desktop\MessageQueuingAssessment\RabbitMQMessagePublisher\bin\Debug\netcoreapp3.1\RabbitMQ.Client.dll
+C:\Users\tsepeng\Desktop\MessageQueuingAssessment\RabbitMQMessagePublisher\bin\Debug\netcoreapp3.1\System.Threading.Channels.dll
+C:\Users\tsepeng\Desktop\MessageQueuingAssessment\RabbitMQMessagePublisher\obj\Debug\netcoreapp3.1\RabbitMQMessagePublisher.csproj.CopyComplete
+C:\Users\tsepeng\Desktop\MessageQueuingAssessment\RabbitMQMessagePublisher\obj\Debug\netcoreapp3.1\RabbitMQMessagePublisher.dll
+C:\Users\tsepeng\Desktop\MessageQueuingAssessment\RabbitMQMessagePublisher\obj\Debug\netcoreapp3.1\RabbitMQMessagePublisher.pdb
+C:\Users\tsepeng\Desktop\MessageQueuingAssessment\RabbitMQMessagePublisher\obj\Debug\netcoreapp3.1\RabbitMQMessagePublisher.genruntimeconfig.cache
