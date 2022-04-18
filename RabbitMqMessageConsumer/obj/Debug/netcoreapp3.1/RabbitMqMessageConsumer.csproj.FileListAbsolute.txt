@@ -1,0 +1,16 @@
+C:\Users\tsepeng\Desktop\MessageQueuingAssessment\RabbitMqMessageConsumer\bin\Debug\netcoreapp3.1\RabbitMqMessageConsumer.exe
+C:\Users\tsepeng\Desktop\MessageQueuingAssessment\RabbitMqMessageConsumer\bin\Debug\netcoreapp3.1\RabbitMqMessageConsumer.deps.json
+C:\Users\tsepeng\Desktop\MessageQueuingAssessment\RabbitMqMessageConsumer\bin\Debug\netcoreapp3.1\RabbitMqMessageConsumer.runtimeconfig.json
+C:\Users\tsepeng\Desktop\MessageQueuingAssessment\RabbitMqMessageConsumer\bin\Debug\netcoreapp3.1\RabbitMqMessageConsumer.runtimeconfig.dev.json
+C:\Users\tsepeng\Desktop\MessageQueuingAssessment\RabbitMqMessageConsumer\bin\Debug\netcoreapp3.1\RabbitMqMessageConsumer.dll
+C:\Users\tsepeng\Desktop\MessageQueuingAssessment\RabbitMqMessageConsumer\bin\Debug\netcoreapp3.1\RabbitMqMessageConsumer.pdb
+C:\Users\tsepeng\Desktop\MessageQueuingAssessment\RabbitMqMessageConsumer\bin\Debug\netcoreapp3.1\RabbitMQ.Client.dll
+C:\Users\tsepeng\Desktop\MessageQueuingAssessment\RabbitMqMessageConsumer\bin\Debug\netcoreapp3.1\System.Threading.Channels.dll
+C:\Users\tsepeng\Desktop\MessageQueuingAssessment\RabbitMqMessageConsumer\obj\Debug\netcoreapp3.1\RabbitMqMessageConsumer.csprojAssemblyReference.cache
+C:\Users\tsepeng\Desktop\MessageQueuingAssessment\RabbitMqMessageConsumer\obj\Debug\netcoreapp3.1\RabbitMqMessageConsumer.AssemblyInfoInputs.cache
+C:\Users\tsepeng\Desktop\MessageQueuingAssessment\RabbitMqMessageConsumer\obj\Debug\netcoreapp3.1\RabbitMqMessageConsumer.AssemblyInfo.cs
+C:\Users\tsepeng\Desktop\MessageQueuingAssessment\RabbitMqMessageConsumer\obj\Debug\netcoreapp3.1\RabbitMqMessageConsumer.csproj.CoreCompileInputs.cache
+C:\Users\tsepeng\Desktop\MessageQueuingAssessment\RabbitMqMessageConsumer\obj\Debug\netcoreapp3.1\RabbitMqMessageConsumer.csproj.CopyComplete
+C:\Users\tsepeng\Desktop\MessageQueuingAssessment\RabbitMqMessageConsumer\obj\Debug\netcoreapp3.1\RabbitMqMessageConsumer.dll
+C:\Users\tsepeng\Desktop\MessageQueuingAssessment\RabbitMqMessageConsumer\obj\Debug\netcoreapp3.1\RabbitMqMessageConsumer.pdb
+C:\Users\tsepeng\Desktop\MessageQueuingAssessment\RabbitMqMessageConsumer\obj\Debug\netcoreapp3.1\RabbitMqMessageConsumer.genruntimeconfig.cache
