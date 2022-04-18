@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tsepeng\\Desktop\\MessageQueuingAssessment\\RabbitM@MessagePublisher.Tests\\RabbitMQMessagePublisher.Tests.csproj": {}
+    "C:\\Users\\tsepeng\\Desktop\\MessageQueuingAssessment\\RabbitMQMessagePublisher.Tests\\RabbitMQMessagePublisher.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tsepeng\\Desktop\\MessageQueuingAssessment\\RabbitM@MessagePublisher.Tests\\RabbitMQMessagePublisher.Tests.csproj": {
+    "C:\\Users\\tsepeng\\Desktop\\MessageQueuingAssessment\\RabbitMQMessagePublisher.Tests\\RabbitMQMessagePublisher.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tsepeng\\Desktop\\MessageQueuingAssessment\\RabbitM@MessagePublisher.Tests\\RabbitMQMessagePublisher.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\tsepeng\\Desktop\\MessageQueuingAssessment\\RabbitMQMessagePublisher.Tests\\RabbitMQMessagePublisher.Tests.csproj",
         "projectName": "RabbitMQMessagePublisher.Tests",
-        "projectPath": "C:\\Users\\tsepeng\\Desktop\\MessageQueuingAssessment\\RabbitM@MessagePublisher.Tests\\RabbitMQMessagePublisher.Tests.csproj",
+        "projectPath": "C:\\Users\\tsepeng\\Desktop\\MessageQueuingAssessment\\RabbitMQMessagePublisher.Tests\\RabbitMQMessagePublisher.Tests.csproj",
         "packagesPath": "C:\\Users\\tsepeng\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tsepeng\\Desktop\\MessageQueuingAssessment\\RabbitM@MessagePublisher.Tests\\obj\\",
+        "outputPath": "C:\\Users\\tsepeng\\Desktop\\MessageQueuingAssessment\\RabbitMQMessagePublisher.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

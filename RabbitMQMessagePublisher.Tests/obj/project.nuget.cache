@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "DJORMGHo+J8VynzaoLL1oZRkiTmd2o7buHcX6t6aeUJGv6sa6sAq3BrAQqet76LKB7lOClSP2FewxStj1OXrzw==",
+  "dgSpecHash": "iMBTtMUNSW2nzqiPrqi/i0dNggq0QuLQ2xO5yOXRRgLgBwFCOXnZyWK2lsHjcjD4oXWA30Kegqcp5oLHHz/vVw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\tsepeng\\Desktop\\MessageQueuingAssessment\\RabbitM@MessagePublisher.Tests\\RabbitMQMessagePublisher.Tests.csproj",
+  "projectFilePath": "C:\\Users\\tsepeng\\Desktop\\MessageQueuingAssessment\\RabbitMQMessagePublisher.Tests\\RabbitMQMessagePublisher.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\tsepeng\\.nuget\\packages\\castle.core\\4.4.1\\castle.core.4.4.1.nupkg.sha512",
     "C:\\Users\\tsepeng\\.nuget\\packages\\coverlet.collector\\1.2.0\\coverlet.collector.1.2.0.nupkg.sha512",
