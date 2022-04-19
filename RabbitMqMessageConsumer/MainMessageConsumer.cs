@@ -8,13 +8,18 @@ namespace RabbitMqMessageConsumer
 {
     public class MainMessageConsumer
     {
+        private IDisplayReceivedMessage displayReceivedMessage;
+
         public static void Main(string[] args)
         {
-            ConsumeMessage();
+            var messageConsumer = new MainMessageConsumer();
+            messageConsumer.ConsumeMessage();
         }
 
-        private static void ConsumeMessage()
+        public void ConsumeMessage()
         {
+            var message = "";
+
             var factory = new ConnectionFactory
             {
                 Uri = new Uri("amqp://guest:guest@localhost:5672")
@@ -31,8 +36,10 @@ namespace RabbitMqMessageConsumer
             consumer.Received += (sender, e) =>
             {
                 var body = e.Body.ToArray();
-                var message = Encoding.UTF8.GetString(body);
-                DisplayReceivedMessage.DisplayIncomingMessage(message);
+                message = Encoding.UTF8.GetString(body);
+
+                displayReceivedMessage = new DisplayReceivedMessage();
+                displayReceivedMessage.DisplayIncomingMessage(message);
             };
 
             channel.BasicConsume("message-queue", true, consumer);

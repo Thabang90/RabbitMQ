@@ -97,3 +97,5 @@ C:\Users\tsepeng\Desktop\MessageQueuingAssessment\RabbitMqMessageConsumer.Tests\
 C:\Users\tsepeng\Desktop\MessageQueuingAssessment\RabbitMqMessageConsumer.Tests\obj\Debug\netcoreapp3.1\RabbitMqMessageConsumer.Tests.dll
 C:\Users\tsepeng\Desktop\MessageQueuingAssessment\RabbitMqMessageConsumer.Tests\obj\Debug\netcoreapp3.1\RabbitMqMessageConsumer.Tests.pdb
 C:\Users\tsepeng\Desktop\MessageQueuingAssessment\RabbitMqMessageConsumer.Tests\obj\Debug\netcoreapp3.1\RabbitMqMessageConsumer.Tests.genruntimeconfig.cache
+C:\Users\tsepeng\Desktop\MessageQueuingAssessment\RabbitMqMessageConsumer.Tests\bin\Debug\netcoreapp3.1\Castle.Core.dll
+C:\Users\tsepeng\Desktop\MessageQueuingAssessment\RabbitMqMessageConsumer.Tests\bin\Debug\netcoreapp3.1\Moq.dll

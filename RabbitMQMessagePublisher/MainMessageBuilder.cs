@@ -23,12 +23,12 @@ namespace RabbitMQMessagePublisher
 
         public void BuildMessageString()
         {
-            Console.WriteLine("Please Enter Name:");
+            Console.Write("Please Enter Name:");
             var inputName = Console.ReadLine();
 
             var message = $"Hello my name is,{inputName}";
 
-            QueueMessagePublisher queueMessagePublisher = new QueueMessagePublisher();
+            IQueueMessagePublisher queueMessagePublisher = new QueueMessagePublisher();
 
             queueMessagePublisher.BuildQueueConnection(message);
         }
@@ -36,7 +36,7 @@ namespace RabbitMQMessagePublisher
         private static bool TryAgainPrompt()
         {
             Console.WriteLine();
-            Console.WriteLine("Try Again? Y/N: ");
+            Console.Write("Try Again? Y/N: ");
 
             var userInput = Console.ReadLine().ToLower();
 

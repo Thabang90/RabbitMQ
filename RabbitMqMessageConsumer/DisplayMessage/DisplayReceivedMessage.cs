@@ -4,9 +4,9 @@ using System.Text;
 
 namespace RabbitMqMessageConsumer.DisplayMessage
 {
-    public class DisplayReceivedMessage
+    public class DisplayReceivedMessage : IDisplayReceivedMessage
     {
-        public static string DisplayIncomingMessage(string message)
+        public string DisplayIncomingMessage(string message)
         {
             var pos = message.IndexOf(",");
             var name = message.Substring(pos + 1).Trim('"');
