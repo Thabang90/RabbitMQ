@@ -1,13 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Moq;
 using RabbitMQ.Client;
-using RabbitMQMessagePublisher;
 using RabbitMQMessagePublisher.QueuePublisher;
-using System.Text;
-using System;
-using Newtonsoft.Json;
-using System.Collections;
-using System.IO;
 
 namespace RabbitM_MessagePublisher.Tests
 {
@@ -29,7 +22,7 @@ namespace RabbitM_MessagePublisher.Tests
         }
 
         [TestMethod]
-        public void BuildQueueConnection_HasValidConnection_ReturnsConnection()
+        public void BuildQueueConnection_HasValidConnection_ConnectionNotNull()
         {
             var factory = new ConnectionFactory();
             var result = factory.CreateConnection();
@@ -39,7 +32,5 @@ namespace RabbitM_MessagePublisher.Tests
 
             Assert.IsNotNull(result);
         }
-
-
     }
 }

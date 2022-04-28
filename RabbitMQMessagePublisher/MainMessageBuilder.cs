@@ -1,36 +1,27 @@
-﻿using RabbitMQMessagePublisher.QueuePublisher;
+﻿using RabbitMQMessagePublisher.MessageString;
+using RabbitMQMessagePublisher.MessageString.Interfaces;
+using RabbitMQMessagePublisher.QueuePublisher;
 using System;
 
 namespace RabbitMQMessagePublisher
 {
     public class MainMessageBuilder
     {
-
         public static void Main(string[] args)
         {
-            MainMessageBuilder msg = new MainMessageBuilder();
+            IQueueMessagePublisher queueMessagePublisher = new QueueMessagePublisher();
+            IBuildMessageString buildMessageString = new BuildMessageString(queueMessagePublisher);
+
             var again = false;
             do
             {
-                msg.BuildMessageString();
+                buildMessageString.CreateMessageString();
                 again = TryAgainPrompt();
             } while (again);
 
             Console.WriteLine();
             Console.WriteLine("...Bye!");
             Console.Read();
-        }
-
-        public void BuildMessageString()
-        {
-            Console.Write("Please Enter Name:");
-            var inputName = Console.ReadLine();
-
-            var message = $"Hello my name is,{inputName}";
-
-            IQueueMessagePublisher queueMessagePublisher = new QueueMessagePublisher();
-
-            queueMessagePublisher.BuildQueueConnection(message);
         }
 
         private static bool TryAgainPrompt()

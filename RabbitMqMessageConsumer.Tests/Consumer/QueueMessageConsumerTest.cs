@@ -2,21 +2,19 @@
 using Moq;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
+using RabbitMqMessageConsumer.Consumer;
 using RabbitMqMessageConsumer.DisplayMessage;
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.IO;
-using System.Text;
 
-namespace RabbitMqMessageConsumer.Tests
+namespace RabbitMqMessageConsumer.Tests.Consumer
 {
     [TestClass]
-    public class MainMessageConsumerTest
+    public class QueueMessageConsumerTest
     {
-        private MainMessageConsumer target;
+        private QueueMessageConsumer target;
         private Mock<IDisplayReceivedMessage> displayReceivedMessage;
-
         private Mock<IConnection> connection;
         private Mock<EventingBasicConsumer> consumer;
         private Mock<IModel> channel;
@@ -24,23 +22,23 @@ namespace RabbitMqMessageConsumer.Tests
         [TestInitialize]
         public void Setup()
         {
-            SetupMocks();
-            displayReceivedMessage = new Mock<IDisplayReceivedMessage>();
-            target = new MainMessageConsumer();
+            this.SetUpMocks();
+            this.target = new QueueMessageConsumer(this.displayReceivedMessage.Object);
         }
 
         [TestCleanup]
         public void Teardown()
         {
-            target = null;
-            displayReceivedMessage = null;
+            this.target = null;
+            this.displayReceivedMessage = null;
             connection = null;
             consumer = null;
             channel = null;
         }
 
-        private void SetupMocks()
+        private void SetUpMocks()
         {
+            this.displayReceivedMessage = new Mock<IDisplayReceivedMessage>();
 
             connection = new Mock<IConnection>();
             connection.Setup(o => o.CreateModel()).Verifiable();
@@ -48,21 +46,30 @@ namespace RabbitMqMessageConsumer.Tests
             channel = new Mock<IModel>();
             consumer = new Mock<EventingBasicConsumer>(channel);
             channel.Setup(o => o.QueueDeclare(It.IsAny<string>(), It.IsAny<bool>(), It.IsAny<bool>(), It.IsAny<bool>(), It.IsAny<IDictionary<string, object>>())).Verifiable();
-
-            var messageToDisplay = "Hello my name is Thabang";
-            displayReceivedMessage = new Mock<IDisplayReceivedMessage>();
-            displayReceivedMessage.Setup(o => o.DisplayIncomingMessage(It.IsAny<string>())).Returns(messageToDisplay);
         }
 
         [TestMethod]
-        public void ConsumeMessage_ValidMessageReceived_DisplayReceivedMessageVerified()
+        public void ConsumeMessage_MockedDisplayReceivedMessage_DisplayIncomingMessageVerified()
         {
             var stringReader = new StringReader("Hello my name is, Thabang");
             Console.SetIn(stringReader);
 
             target.ConsumeMessage();
 
-            displayReceivedMessage.VerifyAll();
+            this.displayReceivedMessage.VerifyAll();
+        }
+
+        [TestMethod]
+        public void ConsumeMessage_InvalidMockedDisplayReceivedMessage_DisplayIncomingMessageNeverCalled()
+        {
+            var stringReader = new StringReader("Hello my name is, Thabang");
+            Console.SetIn(stringReader);
+
+            this.displayReceivedMessage.Setup(o => o.DisplayIncomingMessage(It.IsAny<string>())).Returns(default(string));
+
+            target.ConsumeMessage();
+
+            this.displayReceivedMessage.Verify(o => o.DisplayIncomingMessage(It.IsAny<string>()), Times.Never);
         }
 
         [TestMethod]

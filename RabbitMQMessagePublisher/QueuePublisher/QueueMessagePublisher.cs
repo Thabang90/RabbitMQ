@@ -13,6 +13,7 @@ namespace RabbitMQMessagePublisher.QueuePublisher
             {
                 Uri = new Uri("amqp://guest:guest@localhost:5672")
             };
+
             using var connection = factory.CreateConnection();
             using var channel = connection.CreateModel();
             channel.QueueDeclare("message-queue",
